@@ -16,43 +16,43 @@ end
 
 function sendAiMessageToDiscord(message,title,color,player,damage,ammo,weapon,steamid)
   local embeds = {
-			{
-			["title"] = title,
-			["description"] = message,
-			["type"] = "rich",
-			["color"] =color,
-			["footer"] =  {
-			["text"]= os.date("%d/%m/%Y %H:%M:%S"),
-			},
-				["fields"] = {
-						{
-							["name"] = "Player",
-							["value"] = player,
-							["inline"] = false,
-						},
-						{
-							["name"] = "Steam ID",
-							["value"] = steamid,
-							["inline"] = false,
-						},
-						{
-							["name"] = "Weapon",
-							["value"] = weapon,
-							["inline"] = false,
-						},
-						{
-							["name"] = "Damage",
-							["value"] = damage,
-							["inline"] = false,
-						},
-						{
-							["name"] = "Ammo",
-							["value"] = ammo,
-							["inline"] = false,
-						},
-					},
-			}
-		}
+        {
+        ["title"] = title,
+        ["description"] = message,
+        ["type"] = "rich",
+        ["color"] =color,
+        ["footer"] =  {
+        ["text"]= os.date("%d/%m/%Y %H:%M:%S"),
+        },
+            ["fields"] = {
+                    {
+                        ["name"] = "Player",
+                        ["value"] = player,
+                        ["inline"] = false,
+                    },
+                    {
+                        ["name"] = "Steam ID",
+                        ["value"] = steamid,
+                        ["inline"] = false,
+                    },
+                    {
+                        ["name"] = "Weapon",
+                        ["value"] = weapon,
+                        ["inline"] = false,
+                    },
+                    {
+                        ["name"] = "Damage",
+                        ["value"] = damage,
+                        ["inline"] = false,
+                    },
+                    {
+                        ["name"] = "Ammo",
+                        ["value"] = ammo,
+                        ["inline"] = false,
+                    },
+                },
+        }
+    }
   if message == nil or message == '' then return false end
   local webhook = Config.discordWebhook
   local name = Config.discordBotName
