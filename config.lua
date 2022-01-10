@@ -6,6 +6,9 @@ Config = {}
 --Kills another player.
 Config.LoopMode = false
 
+--Milliseconds to sleep
+Config.SleepMilliSeconds = 5000
+
 Config.BypassRoles = {
     'admin',
     'superadmin'

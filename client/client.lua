@@ -57,7 +57,7 @@ if Config.LoopMode then
                     end
                 end
             end
-            Citizen.Wait(5000)
+            Citizen.Wait(Config.SleepMilliSeconds)
         end
     end)
 end
