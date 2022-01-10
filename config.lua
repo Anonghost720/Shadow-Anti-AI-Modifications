@@ -1,6 +1,9 @@
 Config = {}
 
 --AI DETECTION CONFIG
+--Run in while loop mode, runs every 5 seconds checks less performance
+--If set to false will only run when player 
+--Kills another player.
 Config.LoopMode = false
 
 Config.BypassRoles = {
